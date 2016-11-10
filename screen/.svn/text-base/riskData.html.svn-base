@@ -185,86 +185,109 @@
             <div id="center_top">
 
             </div>
-                <table id="center_table">
-                    <tr id="tr3">
-                        <td>样品名称</td>
-                        <td>样品数量</td>
-                        <td>所属平台</td>
-                        <td>不合格原因</td>
+            <!--<div id="center_tb2">-->
+                <table id="center_tb2">
+                    <tr>
+                        <td>退货编号</td>
+                        <td>货物名称</td>
+                        <td>退货地</td>
+                        <td>日期</td>
+                        <td>退货收货人</td>
                     </tr>
-                    <tr class="tr4">
-                        <td>安慕希牛奶</td>
-                        <td>100</td>
-                        <td>淘宝</td>
-                        <td>过期</td>
+                    <tr>
+                        <td>XX212</td>
+                        <td>香水</td>
+                        <td>浙江</td>
+                        <td>2016.10.03</td>
+                        <td>张XX</td>
                     </tr>
-                    <tr class="tr5">
-                        <td>安慕希牛奶</td>
-                        <td>100</td>
-                        <td>淘宝</td>
-                        <td>过期</td>
+                    <tr>
+                        <td>XX212</td>
+                        <td>香水</td>
+                        <td>浙江</td>
+                        <td>2016.10.03</td>
+                        <td>张XX</td>
                     </tr>
-                    <tr class="tr4">
-                        <td>安慕希牛奶</td>
-                        <td>100</td>
-                        <td>淘宝</td>
-                        <td>过期</td>
+                    <tr>
+                        <td>XX212</td>
+                        <td>香水</td>
+                        <td>浙江</td>
+                        <td>2016.10.03</td>
+                        <td>张XX</td>
                     </tr>
-                    <tr class="tr5">
-                        <td>安慕希牛奶</td>
-                        <td>100</td>
-                        <td>淘宝</td>
-                        <td>过期</td>
+                    <tr>
+                        <td>XX212</td>
+                        <td>香水</td>
+                        <td>浙江</td>
+                        <td>2016.10.03</td>
+                        <td>张XX</td>
                     </tr>
-                    <tr class="tr4">
-                        <td>安慕希牛奶</td>
-                        <td>100</td>
-                        <td>淘宝</td>
-                        <td>过期</td>
-                    </tr>
-                    <tr class="tr5">
-                        <td>安慕希牛奶</td>
-                        <td>100</td>
-                        <td>淘宝</td>
-                        <td>过期</td>
-                    </tr>
-                    <tr class="tr4">
-                        <td>安慕希牛奶</td>
-                        <td>100</td>
-                        <td>淘宝</td>
-                        <td>过期</td>
-                    </tr>
-                    <tr class="tr5">
-                        <td>安慕希牛奶</td>
-                        <td>100</td>
-                        <td>淘宝</td>
-                        <td>过期</td>
-                    </tr>
-                    <tr class="tr4">
-                        <td>安慕希牛奶</td>
-                        <td>100</td>
-                        <td>淘宝</td>
-                        <td>过期</td>
-                    </tr>
-                    <tr class="tr5">
-                        <td>安慕希牛奶</td>
-                        <td>100</td>
-                        <td>淘宝</td>
-                        <td>过期</td>
-                    </tr>
-                    <tr class="tr4">
-                        <td>安慕希牛奶</td>
-                        <td>100</td>
-                        <td>淘宝</td>
-                        <td>过期</td>
-                    </tr>
-                    <tr class="tr5">
-                        <td>安慕希牛奶</td>
-                        <td>100</td>
-                        <td>淘宝</td>
-                        <td>过期</td>
+                    <tr>
+                        <td>XX212</td>
+                        <td>香水</td>
+                        <td>浙江</td>
+                        <td>2016.10.03</td>
+                        <td>张XX</td>
                     </tr>
                 </table>
+            <!--</div>-->
+            <table id="center_tb3">
+                <tr>
+                    <td>报检号</td>
+                    <td>报检单位</td>
+                    <td>贸易国</td>
+                    <td>收货人</td>
+                    <td>货值</td>
+                    <td>品名</td>
+                    <td>不合格原因</td>
+                </tr>
+                <tr>
+                    <td>XX212</td>
+                    <td>杭州局</td>
+                    <td>美国</td>
+                    <td>张XX</td>
+                    <td>100</td>
+                    <td>奶粉</td>
+                    <td>过期</td>
+                </tr>
+                <tr>
+                    <td>XX212</td>
+                    <td>杭州局</td>
+                    <td>美国</td>
+                    <td>张XX</td>
+                    <td>100</td>
+                    <td>奶粉</td>
+                    <td>过期</td>
+                </tr>
+                <tr>
+                    <td>XX212</td>
+                    <td>杭州局</td>
+                    <td>美国</td>
+                    <td>张XX</td>
+                    <td>100</td>
+                    <td>奶粉</td>
+                    <td>过期</td>
+                </tr>
+                <tr>
+                    <td>XX212</td>
+                    <td>杭州局</td>
+                    <td>美国</td>
+                    <td>张XX</td>
+                    <td>100</td>
+                    <td>奶粉</td>
+                    <td>过期</td>
+                </tr>
+                <tr>
+                    <td>XX212</td>
+                    <td>杭州局</td>
+                    <td>美国</td>
+                    <td>张XX</td>
+                    <td>100</td>
+                    <td>奶粉</td>
+                    <td>过期</td>
+                </tr>
+            </table>
+            <div id="center2"></div>
         </div>
 
     </div>

@@ -185,57 +185,89 @@
         </div>
         <div id="center" >
             <div id="centerDataCloud">
-
+                <a href="#"target="_blank">差评</a>
+                <a href="#"target="_blank">假冒</a>
+                <a href="#"target="_blank">投诉</a>
+                <a href="#"target="_blank">太差了</a>
+                <a href="#"target="_blank">质量差</a>
+                <a href="#"target="_blank">TMD</a>
+                <a href="#"target="_blank">过期</a>
+                <a href="#"target="_blank">太好了</a>
+                <a href="#"target="_blank">太假了</a>
+                <a href="#"target="_blank">垃圾</a>
+                <a href="#"target="_blank">挺好的</a>
+                <a href="#"target="_blank">高仿</a>
+                <a href="#"target="_blank">很差劲</a>
+                <a href="#"target="_blank">服务差</a>
+                <a href="#"target="_blank">骗人的</a>
+                <a href="#"target="_blank">退货</a>
+                <a href="#"target="_blank">差评</a>
+                <a href="#"target="_blank">假冒</a>
+                <a href="#"target="_blank">投诉</a>
+                <a href="#"target="_blank">太差了</a>
+                <a href="#"target="_blank">质量差</a>
+                <a href="#"target="_blank">TMD</a>
+                <a href="#"target="_blank">过期</a>
+                <a href="#"target="_blank">太好了</a>
+                <a href="#"target="_blank">太假了</a>
+                <a href="#"target="_blank">垃圾</a>
+                <a href="#"target="_blank">挺好的</a>
+                <a href="#"target="_blank">高仿</a>
+                <a href="#"target="_blank">好用</a>
+                <a href="#"target="_blank">很差劲</a>
+                <a href="#"target="_blank">服务差</a>
+                <a href="#"target="_blank">退货</a>
             </div>
             <div id="center_tb1">
                 <table id="center_table1">
-                    <tr class="tr1_head">
+                    <tr class="tr2_head">
                         <td>网站</td>
                         <td>品牌</td>
                         <td>数量</td>
                     </tr>
-                    <tr class="tr1">
+                    <tr class="tr2">
                         <td>京东</td>
                         <td>奶粉</td>
                         <td>100</td>
                     </tr>
-                    <tr class="tr1">
+                    <tr class="tr2">
                         <td>京东</td>
                         <td>奶粉</td>
                         <td>100</td>
                     </tr>
-                    <tr class="tr1">
+                    <tr class="tr2">
                         <td>京东</td>
                         <td>奶粉</td>
                         <td>100</td>
                     </tr>
-                    <tr class="tr1">
+                    <tr class="tr2">
                         <td>京东</td>
                         <td>奶粉</td>
                         <td>100</td>
                     </tr>
-                    <tr class="tr1">
+                    <tr class="tr2">
                         <td>京东</td>
                         <td>奶粉</td>
                         <td>100</td>
                     </tr>
-                    <tr class="tr1">
+                    <tr class="tr2">
                         <td>京东</td>
                         <td>奶粉</td>
                         <td>100</td>
                     </tr>
-                    <tr class="tr1">
+                    <tr class="tr2">
                         <td>京东</td>
                         <td>奶粉</td>
                         <td>100</td>
                     </tr>
-                    <tr class="tr1">
+                    <tr class="tr2">
                         <td>京东</td>
                         <td>奶粉</td>
                         <td>100</td>
                     </tr>
                 </table>
             </div>
+            <div id="center_bar3"></div>
         </div>
 
     </div>

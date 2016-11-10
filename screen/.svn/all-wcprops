@@ -9,17 +9,29 @@ svn:wc:ra_dav:version-url
 V 71
 /svn/antang/!svn/ver/2139/cms/hzkjzh/WebRoot/screen/riskResolution.html
 END
+lineBar.html
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/antang/!svn/ver/2145/cms/hzkjzh/WebRoot/screen/lineBar.html
+END
 captureData.html
 K 25
 svn:wc:ra_dav:version-url
 V 68
-/svn/antang/!svn/ver/2139/cms/hzkjzh/WebRoot/screen/captureData.html
+/svn/antang/!svn/ver/2145/cms/hzkjzh/WebRoot/screen/captureData.html
 END
 chart_lineBar.html
 K 25
 svn:wc:ra_dav:version-url
 V 70
 /svn/antang/!svn/ver/2139/cms/hzkjzh/WebRoot/screen/chart_lineBar.html
+END
+pie.html
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/antang/!svn/ver/2145/cms/hzkjzh/WebRoot/screen/pie.html
 END
 public.html
 K 25
@@ -43,5 +55,5 @@ riskData.html
 K 25
 svn:wc:ra_dav:version-url
 V 65
-/svn/antang/!svn/ver/2139/cms/hzkjzh/WebRoot/screen/riskData.html
+/svn/antang/!svn/ver/2145/cms/hzkjzh/WebRoot/screen/riskData.html
 END

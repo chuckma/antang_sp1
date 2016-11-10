@@ -418,7 +418,7 @@ function drawBar2(ec) {
 };
 function drawBar3(ec) {
     // 基于准备好的dom，初始化echarts图表
-    var myChart = ec.init(document.getElementById('center_bar1'), 'macarons');
+    var myChart = ec.init(document.getElementById('center_bar3'), 'macarons');
     var option4 = {
         // title: {
         //     text: '2016年B2C',

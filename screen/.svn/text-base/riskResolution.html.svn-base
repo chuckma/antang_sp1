@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>风险处置</title>
+    <link rel="stylesheet" href="css/chart.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="javascript/chart.js"></script>
+<body>
+<script src="http://echarts.baidu.com/build/dist/echarts.js"></script>
+<script src="javascript/dataCloud.js"></script>
+<script src="javascript/chart.js"></script>
+    <div id="main" >
+        <div id="left" >
+            <div id="left1">
+                <h2>外系统风险数据</h2>
+                <table id="left1_table">
+                    <tr>
+                        <td class="td1">出口退货信息</td>
+                        <td class="data1">1256546</td>
+                        <td class="td1">入境不合格信息</td>
+                        <td class="data1">1256546</td>
+                    </tr>
+                    <tr>
+                        <td class="td1">疫情疫病</td>
+                        <td class="data1">1256546</td>
+                        <td class="td1">出口预警</td>
+                        <td class="data1">1256546</td>
+                    </tr>
+                    <tr>
+                        <td class="td1">进口预警</td>
+                        <td class="data1">1256546</td>
+                        <td class="td1">通报召回</td>
+                        <td class="data1">1256546</td>
+                    </tr>
+                </table>
+            </div>
+            <div id="left2">
+
+            </div>
+            <div id="left3">
+                <h2>数据抓取</h2>
+                <div id="div1">
+                    <!--<a href="#"target="_blank">差评</a>-->
+                    <!--<a href="#"target="_blank">假冒</a>-->
+                    <!--<a href="#"target="_blank">投诉</a>-->
+                    <!--<a href="#"target="_blank">太差了</a>-->
+                    <!--<a href="#"target="_blank">质量差</a>-->
+                    <!--<a href="#"target="_blank">TMD</a>-->
+                    <!--<a href="#"target="_blank">过期</a>-->
+                    <!--<a href="#"target="_blank">太好了</a>-->
+                    <!--<a href="#"target="_blank">太假了</a>-->
+                    <!--<a href="#"target="_blank">垃圾</a>-->
+                    <!--<a href="#"target="_blank">挺好的</a>-->
+                    <!--<a href="#"target="_blank">高仿</a>-->
+                    <!--<a href="#"target="_blank">很差劲</a>-->
+                    <!--<a href="#"target="_blank">服务差</a>-->
+                    <!--<a href="#"target="_blank">骗人的</a>-->
+                    <!--<a href="#"target="_blank">退货</a>-->
+                    <!--<a href="#"target="_blank">差评</a>-->
+                    <!--<a href="#"target="_blank">假冒</a>-->
+                    <!--<a href="#"target="_blank">投诉</a>-->
+                    <!--<a href="#"target="_blank">太差了</a>-->
+                    <!--<a href="#"target="_blank">质量差</a>-->
+                    <!--<a href="#"target="_blank">TMD</a>-->
+                    <!--<a href="#"target="_blank">过期</a>-->
+                    <!--<a href="#"target="_blank">太好了</a>-->
+                    <!--<a href="#"target="_blank">太假了</a>-->
+                    <!--<a href="#"target="_blank">垃圾</a>-->
+                    <!--<a href="#"target="_blank">挺好的</a>-->
+                    <!--<a href="#"target="_blank">高仿</a>-->
+                    <!--<a href="#"target="_blank">好用</a>-->
+                    <!--<a href="#"target="_blank">很差劲</a>-->
+                    <!--<a href="#"target="_blank">服务差</a>-->
+                    <!--<a href="#"target="_blank">退货</a>-->
+                </div>
+                <div id="left3_d">
+                    <table id="left3_table">
+                        <tr class="tr1_head">
+                            <td>网站</td>
+                            <td>品牌</td>
+                            <td>数量</td>
+                        </tr>
+                        <tr class="tr1">
+                            <td>京东</td>
+                            <td>奶粉</td>
+                            <td>100</td>
+                        </tr>
+                        <tr class="tr1">
+                            <td>京东</td>
+                            <td>奶粉</td>
+                            <td>100</td>
+                        </tr>
+                        <tr class="tr1">
+                            <td>京东</td>
+                            <td>奶粉</td>
+                            <td>100</td>
+                        </tr>
+                        <tr class="tr1">
+                            <td>京东</td>
+                            <td>奶粉</td>
+                            <td>100</td>
+                        </tr>
+                        <tr class="tr1">
+                            <td>京东</td>
+                            <td>奶粉</td>
+                            <td>100</td>
+                        </tr>
+                        <tr class="tr1">
+                            <td>京东</td>
+                            <td>奶粉</td>
+                            <td>100</td>
+                        </tr>
+                        <tr class="tr1">
+                            <td>京东</td>
+                            <td>奶粉</td>
+                            <td>100</td>
+                        </tr>
+                        <tr class="tr1">
+                            <td>京东</td>
+                            <td>奶粉</td>
+                            <td>100</td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="line_d">
+
+                </div>
+            </div>
+        </div>
+
+        <div id="right" >
+            <div id="right1">
+                <h2>贸易概况</h2>
+                <div id="left_line"></div>
+                <div id="right_line"></div>
+                <div id="left_bar"></div>
+                <div id="right_bar"></div>
+            </div>
+            <div id="right2">
+                <h2>风险处置</h2>
+                <table id="right2_table">
+                    <tr style="height: 10px;">
+                        <td style="background-color: #d59717;height: 5px;"></td>
+                        <td class="td2">江干园区</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: #e7954b"></td>
+                        <td class="td2">拱墅园区</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: #a4b0d4"></td>
+                        <td class="td2">余杭园区</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: #9ec642"></td>
+                        <td class="td2">上城园区</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: #aed08d"></td>
+                        <td class="td2">富阳园区</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: #52110d"></td>
+                        <td class="td2">下城园区</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: #f2b9d4"></td>
+                        <td class="td2">萧山园区</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: #f3a37e"></td>
+                        <td class="td2">滨江园区</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: #d2651d"></td>
+                        <td class="td2">西湖园区</td>
+                    </tr>
+                </table>
+            </div>
+            <div id="right3"></div>
+        </div>
+        <div id="center" >
+            <div id="center_top">
+
+            </div>
+                <table id="center_table">
+                    <tr id="tr3">
+                        <td>样品名称</td>
+                        <td>样品数量</td>
+                        <td>所属平台</td>
+                        <td>不合格原因</td>
+                    </tr>
+                    <tr class="tr4">
+                        <td>安慕希牛奶</td>
+                        <td>100</td>
+                        <td>淘宝</td>
+                        <td>过期</td>
+                    </tr>
+                    <tr class="tr5">
+                        <td>安慕希牛奶</td>
+                        <td>100</td>
+                        <td>淘宝</td>
+                        <td>过期</td>
+                    </tr>
+                    <tr class="tr4">
+                        <td>安慕希牛奶</td>
+                        <td>100</td>
+                        <td>淘宝</td>
+                        <td>过期</td>
+                    </tr>
+                    <tr class="tr5">
+                        <td>安慕希牛奶</td>
+                        <td>100</td>
+                        <td>淘宝</td>
+                        <td>过期</td>
+                    </tr>
+                    <tr class="tr4">
+                        <td>安慕希牛奶</td>
+                        <td>100</td>
+                        <td>淘宝</td>
+                        <td>过期</td>
+                    </tr>
+                    <tr class="tr5">
+                        <td>安慕希牛奶</td>
+                        <td>100</td>
+                        <td>淘宝</td>
+                        <td>过期</td>
+                    </tr>
+                    <tr class="tr4">
+                        <td>安慕希牛奶</td>
+                        <td>100</td>
+                        <td>淘宝</td>
+                        <td>过期</td>
+                    </tr>
+                    <tr class="tr5">
+                        <td>安慕希牛奶</td>
+                        <td>100</td>
+                        <td>淘宝</td>
+                        <td>过期</td>
+                    </tr>
+                    <tr class="tr4">
+                        <td>安慕希牛奶</td>
+                        <td>100</td>
+                        <td>淘宝</td>
+                        <td>过期</td>
+                    </tr>
+                    <tr class="tr5">
+                        <td>安慕希牛奶</td>
+                        <td>100</td>
+                        <td>淘宝</td>
+                        <td>过期</td>
+                    </tr>
+                    <tr class="tr4">
+                        <td>安慕希牛奶</td>
+                        <td>100</td>
+                        <td>淘宝</td>
+                        <td>过期</td>
+                    </tr>
+                    <tr class="tr5">
+                        <td>安慕希牛奶</td>
+                        <td>100</td>
+                        <td>淘宝</td>
+                        <td>过期</td>
+                    </tr>
+                </table>
+        </div>
+
+    </div>
+</body>
+</html>

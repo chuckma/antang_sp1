@@ -1,0 +1,32 @@
+﻿body {
+    background: #6A5ACD;
+}
+
+#div1 {
+    height: 45%;
+    width: 45%;
+    position: relative;
+    /*left:5%;*/
+    padding:0;
+    float: left;
+    /*margin: 0 80% auto 20%;*/
+    border: solid 0.5px;
+    border-color: #fd971f;
+
+}
+
+#div1 a {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 5px;
+    padding: 3px 6px;
+}
+
+#div1 a:hover {
+    border: 1px solid #eee;
+    background: #000;
+    border-radius: 5px;
+}

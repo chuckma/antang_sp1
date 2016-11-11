@@ -41,7 +41,7 @@ table{
     border-color: #ff0000;
 }
 #left_line,#right_line,#left_bar,#right_bar{
-    /*padding:20% 20%;*/
+    margin-bottom:0;
     width: 45%;
     height:35%;
     float: left;
@@ -52,7 +52,8 @@ table{
     border-color: #1a6091;
     background-color: #1F1F7A;
     width:80%;
-    /*height:20%;*/
+    /*height:40%;*/
+    height:20%;
     text-align: center;
     font-size: 5px;
     color: #ffffff;
@@ -68,19 +69,16 @@ table{
     font-size:8px;
     color: #FFFF00;
 }
-#line_d{
-    /*left:10%;*/
-    position: relative;
-    bottom: 0px;
-    padding-top:5%;
-    width: 100%;
-    height:20%;
-    float: left;
-    clear: left;
+#left3_bar{
+    position: fixed;
+    width:20%;
+    height:10%;
+    bottom:0;
+    /*background:rgba(2,84,145,0.2);*/
 }
 #left3_d{
     width:50%;
-    height:45%;
+    height:40%;
     float: right;
     /*align-content: center;*/
 }
@@ -110,8 +108,8 @@ table{
     /*vertical-align: text-bottom;*/
 }
 #left_line,#left_bar,#right_line,#right_bar{
-    border:solid 1px;
-    border-color: #fd971f;
+    /*border:solid 1px;*/
+    /*border-color: #fd971f;*/
 }
 #center_table{
     position: fixed;
@@ -124,12 +122,15 @@ table{
     border-collapse: collapse;
 }
 #center_top,#center_bottom{
-    border:solid 1px;
-    border-color: #FF0000;
+    /*border:solid 1px;*/
+    /*border-color: #FF0000;*/
 }
 #center_top{
     position: fixed;
-    height:50%;
+    left:22%;
+    top:10%;
+    width:56%;
+    height:15%;
 }
 #center_bottom{
     position: relative;
@@ -261,7 +262,7 @@ table{
 }
 #center_tb2,#center_tb3{
     width:25%;
-    height:25%;
+    height:26%;
     position: fixed;
     top:25%;
     border:solid 2px;
@@ -280,13 +281,43 @@ table{
     color: #FFFF00;
 }
 #center_tb2{
-    left:25%;
+    left:24%;
     border-collapse: separate;
     border-spacing:1px 3px;
 }
 #center_tb3{
-    left:50%;
+    left:51%;
     border-collapse: separate;
     border-spacing:0px 7px;
+}
+#centerTopBar1{
+    position: fixed;
+    left:22%;
+    top:0;
+    width:28%;
+    height:10%;
+}
+#centerTopBar2{
+    position: fixed;
+    right:22%;
+    top:0;
+    width:28%;
+    height:10%;
+}
+#img_bar1{
+    position: fixed;
+    left:23%;
+    top:5%;
+    /*width: 350px;*/
+    /*height:10px;*/
+    /*background-color: #15cff8;*/
+}
+#img_bar2{
+    position: fixed;
+    right:23%;
+    top:5%;
+    /*width: 350px;*/
+    /*height:10px;*/
+    /*background-color: #15cff8;*/
 }
 /*025491 20%; 15cff8 20%; 2e7dce */

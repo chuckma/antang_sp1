@@ -1,13 +1,25 @@
 K 25
 svn:wc:ra_dav:version-url
 V 62
-/svn/antang/!svn/ver/2139/cms/hzkjzh/WebRoot/screen/javascript
+/svn/antang/!svn/ver/2162/cms/hzkjzh/WebRoot/screen/javascript
+END
+new_chart.js
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/antang/!svn/ver/2162/cms/hzkjzh/WebRoot/screen/javascript/new_chart.js
 END
 lineBar.js
 K 25
 svn:wc:ra_dav:version-url
 V 73
 /svn/antang/!svn/ver/2139/cms/hzkjzh/WebRoot/screen/javascript/lineBar.js
+END
+echarts-all.js
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/antang/!svn/ver/2162/cms/hzkjzh/WebRoot/screen/javascript/echarts-all.js
 END
 dataCloud.js
 K 25
@@ -25,5 +37,5 @@ chart.js
 K 25
 svn:wc:ra_dav:version-url
 V 71
-/svn/antang/!svn/ver/2145/cms/hzkjzh/WebRoot/screen/javascript/chart.js
+/svn/antang/!svn/ver/2162/cms/hzkjzh/WebRoot/screen/javascript/chart.js
 END

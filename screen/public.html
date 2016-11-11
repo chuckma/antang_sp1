@@ -3,62 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <title>公共code</title>
-    <script src="http://echarts.baidu.com/build/dist/echarts.js"></script>
+    <style type="text/css">
+        #main,#right,#center_top{
+            border:solid 0.5px;
+            border-color: #FF0000;
+        }
+        #main {
+            width: 50%;
+            height: 25%;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+
+        #left2 {
+            width: 50%;
+            height: 25%;
+            position: fixed;
+            top: 0;
+            left: 50%;
+        }
+
+        #center_top {
+            position: fixed;
+            left: 22%;
+            top: 30%;
+            width: 56%;
+            height: 24%;
+        }
+    </style>
 </head>
 <body>
-<!-- 为ECharts准备一个具备大小（宽高）的Dom -->
-<div id="main" style="height:400px"></div>
-<!-- ECharts单文件引入 -->
+<div id="main"></div>
+<div id="left2"></div>
+<div id="center_top">
 
-<script type="text/javascript">
-    // 路径配置
-    require.config({
-        paths: {
-            echarts: 'http://echarts.baidu.com/build/dist'
-        }
-    });
-
-    // 使用
-    require(
-            [
-                'echarts',
-                'echarts/chart/bar' // 使用柱状图就加载bar模块，按需加载
-            ],
-            function (ec) {
-                // 基于准备好的dom，初始化echarts图表
-                var myChart = ec.init(document.getElementById('main'));
-
-                var option = {
-                    tooltip: {
-                        show: true
-                    },
-                    legend: {
-                        data:['销量']
-                    },
-                    xAxis : [
-                        {
-                            type : 'category',
-                            data : ["衬衫","羊毛衫","雪纺衫","裤子","高跟鞋","袜子"]
-                        }
-                    ],
-                    yAxis : [
-                        {
-                            type : 'value'
-                        }
-                    ],
-                    series : [
-                        {
-                            "name":"销量",
-                            "type":"bar",
-                            "data":[5, 20, 40, 10, 10, 20]
-                        }
-                    ]
-                };
-
-                // 为echarts对象加载数据
-                myChart.setOption(option);
-            }
-    );
-</script>
+</div>
+<script src="javascript/echarts-all.js"></script>
+<!--<script src="javascript/public.js"></script>-->
+<script src="javascript/new_chart.js"></script>
 </body>
 </html>

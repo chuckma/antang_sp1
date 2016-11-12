@@ -6,8 +6,9 @@
     <link rel="stylesheet" href="css/chart.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/style_center.css">
 <body>
+
+
 <div id="main">
     <div id="left">
         <div id="left1">
@@ -78,6 +79,9 @@
                         <td>网站</td>
                         <td>品牌</td>
                         <td>数量</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" style="height: 2px;background-color: #2e7dce"></td>
                     </tr>
                     <tr class="tr1">
                         <td>京东</td>
@@ -176,18 +180,47 @@
                 </tr>
             </table>
         </div>
-        <div id="right3"></div>
+        <div id="right3">
+            <div id="right3_text">
+                <h2 style="text-align: center">风险监测中心运作图</h2>
+                <h2 style="text-align: center">风险监测中心建设目标图</h2>
+            </div>
+        </div>
     </div>
     <div id="center">
+        <div id="centertitle1">
+            <h2 id="centerTopLine1">企业备案数量</h2>
+            <img src="image/imgBar.png" alt="ddd" id="img_line1">
+            <h2 id="centerTopLine2">商品备案数量</h2>
+            <img src="image/imgBar.png" alt="ddd" id="img_line2">
+        </div>
         <div id="center_line1" class="center_chart"></div>
         <div id="center_line2" class="center_chart"></div>
+        <div id="centertitle2">
+            <h2 id="centerBottomBar1">2016B2B</h2>
+            <img src="image/imgBar.png" alt="ddd" id="img_bar1">
+            <h2 id="centerBottomBar2">2016B2C</h2>
+            <img src="image/imgBar.png" alt="ddd" id="img_bar2">
+        </div>
         <div id="center_bar1" class="center_chart"></div>
         <div id="center_bar2" class="center_chart"></div>
+
     </div>
 </div>
 <script src="javascript/echarts-all.js"></script>
 <script src="javascript/new_chart.js"></script>
-<!--<script src="javascript/dataCloud.js"></script>-->
-<!--<script src="javascript/dataCloud_center.js"></script>-->
+<script src="javascript/dataCloud.js"></script>
+<script type="text/javascript">
+    drawLeftPie();
+    drawLeftBar();
+    drawRightBar1();
+    drawRightBar2();
+    drawRightLine1();
+    drawRightLine2();
+    drawCenterLine1();
+    drawCenterLine2();
+    drawCenterBar1();
+    drawCenterBar2();
+</script>
 </body>
 </html>

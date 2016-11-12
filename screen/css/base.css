@@ -15,7 +15,7 @@
 h2{
     text-align: center;
     color: #ffffff;
-    font-size: 20px;
+    font-size: 16px;
     margin-top: 8px;
 }
 table{
@@ -42,13 +42,13 @@ table{
 }
 #left_line,#right_line,#left_bar,#right_bar{
     margin-bottom:0;
-    width: 45%;
-    height:35%;
+    width: 49%;
+    height:40%;
     float: left;
-    margin-left:3%;
+    margin-left:0;
 }
 #left3_table{
-    border:solid 5px;
+    border:solid 3px;
     border-color: #1a6091;
     background-color: #1F1F7A;
     width:80%;
@@ -121,7 +121,7 @@ table{
     text-align: center;
     border-collapse: collapse;
 }
-#center_top,#center_bottom{
+#center_top{
     /*border:solid 1px;*/
     /*border-color: #FF0000;*/
 }
@@ -130,7 +130,7 @@ table{
     left:22%;
     top:10%;
     width:56%;
-    height:15%;
+    height:21%;
 }
 #center_bottom{
     position: relative;
@@ -151,42 +151,42 @@ table{
     opacity: 0.8;
 }
 #center_line1{
-    width:25%;
+    width:28%;
     height:40%;
     position: fixed;
-    left:25%;
-    top:5%;
-    border:solid 0.5px;
-    border-color: #eb6100;
+    left:22%;
+    top:8%;
+    /*border:solid 0.5px;*/
+    /*border-color: #eb6100;*/
 
 }
 #center_line2{
     /*float: left;*/
-    width:25%;
+    width:28%;
     height:40%;
     position: fixed;
-    left:50%;
-    top:5%;
-    border:solid 0.5px;
-    border-color: #eb6100;
+    right:22%;
+    top:8%;
+    /*border:solid 0.5px;*/
+    /*border-color: #eb6100;*/
 }
 #center_bar1{
-    width:25%;
+    width:28%;
     height:40%;
     position: fixed;
-    left:25%;
-    top:55%;
-    border:solid 0.5px;
-    border-color: #eb6100;
+    left:22%;
+    top:58%;
+    /*border:solid 0.5px;*/
+    /*border-color: #eb6100;*/
 }
 #center_bar2{
-    width:25%;
+    width:28%;
     height:40%;
     position: fixed;
-    left:50%;
-    top:55%;
-    border:solid 0.5px;
-    border-color: #eb6100;
+    right:22%;
+    top:58%;
+    /*border:solid 0.5px;*/
+    /*border-color: #eb6100;*/
 }
 #centerDataCloud{
     width:25%;
@@ -211,7 +211,7 @@ table{
     font-size: 15px;
     color: #FFFFFF;
     border-collapse:separate;
-    border-spacing:5px 7px;
+    border-spacing:0px 0px;
     text-align: center;
     border:solid 3px;
     border-color: #025491;
@@ -220,7 +220,7 @@ table{
     /*padding:20%;*/
 }
 .tr2_head{
-    font-size: 16px;
+    font-size: 18px;
     color: #FFFF00;
     background-color:#2e7dce ;
     opacity:0.2;
@@ -244,8 +244,8 @@ table{
     position: fixed;
     top:50%;
     left:25%;
-    border:solid 2px;
-    border-color: #eb6100;
+    /*border:solid 2px;*/
+    /*border-color: #eb6100;*/
 
 }
 #center2{
@@ -257,20 +257,23 @@ table{
     background-image: url(../image/worldMap.png);
     background-repeat:no-repeat;
     /*background-attachment: fixed;*/
-    background-position: center;
-    background-size: 100%;
+    background-position: 30% 85%;
+    background-size: 75%;
 }
 #center_tb2,#center_tb3{
     width:25%;
     height:26%;
     position: fixed;
-    top:25%;
-    border:solid 2px;
+    top:32%;
+    border:solid 3px;
     border-color: #025491;
     font-size: 12px;
     color: #FFFFFF;
     text-align: center;
-
+}
+.bgc{
+    background-color: #01479c;
+    opacity: 0.5;
 }
 #center_tb3 tr:first-child{
     font-size:12px;
@@ -283,28 +286,46 @@ table{
 #center_tb2{
     left:24%;
     border-collapse: separate;
-    border-spacing:1px 3px;
+    border-spacing:0;
 }
 #center_tb3{
     left:51%;
     border-collapse: separate;
-    border-spacing:0px 7px;
+    border-spacing:0;
 }
-#centerTopBar1{
+#centertitle1{
+    width:56%;
+    height:7%;
+    position: fixed;
+    top:0%;
+    left:22%;
+    /*border:solid 2px #fd971f;*/
+}
+#centertitle1 > #img_line1{
+    left:23%;
+    position: fixed;
+    top:3%;
+}
+#centertitle1 > #img_line2{
+    right:23%;
+    position: fixed;
+    top:3%;
+}
+#centerTopLine1{
     position: fixed;
     left:22%;
     top:0;
     width:28%;
     height:10%;
 }
-#centerTopBar2{
+#centerTopLine2{
     position: fixed;
     right:22%;
     top:0;
     width:28%;
     height:10%;
 }
-#img_bar1{
+#img_line1{
     position: fixed;
     left:23%;
     top:5%;
@@ -312,12 +333,118 @@ table{
     /*height:10px;*/
     /*background-color: #15cff8;*/
 }
-#img_bar2{
+#img_line2{
     position: fixed;
     right:23%;
     top:5%;
     /*width: 350px;*/
     /*height:10px;*/
     /*background-color: #15cff8;*/
+}
+#centertitle2{
+    width:56%;
+    height:9%;
+    position: fixed;
+    top:48%;
+    left:22%;
+    /*border:solid 1px #fd971f;*/
+}
+#centerBottomBar1{
+    position: fixed;
+    left:22%;
+    top:48%;
+    width:28%;
+    height:10%;
+}
+#centerBottomBar2{
+    position: fixed;
+    right:22%;
+    top:48%;
+    width:28%;
+    height:10%;
+}
+#img_bar1{
+    left:23%;
+    position: fixed;
+    bottom:45%;
+}
+#img_bar2{
+    right:23%;
+    position: fixed;
+    bottom:45%;
+}
+#riskDatadiv1,#riskDatadiv2,#riskDatadiv3,#riskDatadiv4{
+    text-align: center;
+    margin-top: 8px;
+    background-color: #635F77;
+    opacity:0.9;
+}
+#riskDatadiv1{
+    position: fixed;
+    left:23%;
+    bottom:21%;
+    width:8%;
+    width:8%;
+    height:9%;
+}
+#riskDatadiv2{
+    position: fixed;
+    left:27%;
+    bottom:6%;
+    width:8%;
+    height:9%;
+}
+#riskDatadiv3{
+    position: fixed;
+    right:24%;
+    bottom:22%;
+    width:8%;
+    height:9%;
+}#riskDatadiv4{
+     position: fixed;
+     right:24%;
+     bottom:4%;
+     width:8%;
+     height:9%;
+ }
+.colorBar{
+     background-color: #F2914A;
+}
+#colorBar1{
+     height:0.8%;
+     position: fixed;
+     bottom:25%;
+     left:31.5%;
+     width:3%;
+}
+#colorBar2{
+    height:0.8%;
+    position: fixed;
+    bottom:10%;
+    left:35.5%;
+    width:4%;
+}
+#colorBar3{
+    height:0.8%;
+    position: fixed;
+    bottom:26%;
+    right:32.5%;
+    width:10%;
+}
+#colorBar4{
+    height:0.8%;
+    position: fixed;
+    bottom:8%;
+    right:32.5%;
+    width:5%;
+}
+#right3_text{
+    width:20%;
+    height:20%;
+    position: fixed;
+    right:2%;
+    bottom:2%;
+    /*border:solid 2px #fd971f;*/
+
 }
 /*025491 20%; 15cff8 20%; 2e7dce */

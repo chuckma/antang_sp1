@@ -1,12 +1,11 @@
-drawPie1();
-drawPie2();
-drawBar1();
-drawBar2();
-drawBar3();
-drawLine1();
-drawLine2();
+// drawLeftPie();
+// drawLeftBar();
+// drawRightBar1();
+// drawRightBar2();
+// drawRightLine1();
+// drawRightLine2();
 
-function drawPie1() {
+function drawLeftPie() {
     // 基于准备好的dom，初始化echarts图表
     var myChart = echarts.init(document.getElementById('left2'));
 
@@ -86,7 +85,7 @@ function drawPie1() {
             x: 'center',
             textStyle: {
                 color: '#FFFFFF',
-                fontSize: 20
+                fontSize: 16
             }
         },
 
@@ -175,14 +174,14 @@ function drawPie1() {
     // 为echarts对象加载数据
     myChart.setOption(option);
 };
-function drawPie2() {
+function drawCenterPie1() {
     var myChart = echarts.init(document.getElementById('center_top'));
     var option = {
         series: [
             {
                 name: '访问来源',
                 type: 'pie',
-                radius: '80%',
+                radius: '70%',
                 center: ['15%', '50%'],
                 data: [
                     {value: 335, name: '法国'},
@@ -190,11 +189,12 @@ function drawPie2() {
                     {value: 234, name: '英国'},
                     {value: 135, name: '美国'}
                 ]
+
             },
             {
                 name: '访问来源',
                 type: 'pie',
-                radius: '80%',
+                radius: '70%',
                 center: ['30%', '50%'],
                 data: [
                     {value: 335, name: '奶粉'},
@@ -206,19 +206,19 @@ function drawPie2() {
             {
                 name: '访问来源',
                 type: 'pie',
-                radius: '80%',
+                radius: '70%',
                 center: ['70%', '50%'],
                 data: [
-                    {value: 335, name: '法国'},
+                    {value: 270, name: '法国'},
                     {value: 310, name: '俄国'},
                     {value: 234, name: '英国'},
-                    {value: 135, name: '美国'}
+                    {value: 200, name: '美国'}
                 ]
             },
             {
                 name: '访问来源',
                 type: 'pie',
-                radius: '80%',
+                radius: '70%',
                 center: ['85%', '50%'],
                 data: [
                     {value: 335, name: '奶粉'},
@@ -228,25 +228,27 @@ function drawPie2() {
                 ]
             }
 
-        ]
+        ],
+        color: ['#B1DA4D', '#FFF45C', ' #00B8EE', '#F2914A'] /*B1DA4D FFF45C*/
+
     };
     // 为echarts对象加载数据
     myChart.setOption(option);
 };
-function drawBar1() {
-    var myChart = echarts.init(document.getElementById('left3_bar'), 'macarons');
+function drawLeftBar() {
+    var myChart = echarts.init(document.getElementById('left3_bar'));
+    /*, 'macarons'*/
     var option4 = {
-        tooltip: {
-            trigger: 'axis'
-        },
-        calculable: true,
+        // tooltip: {
+        //     trigger: 'axis'
+        // },
         xAxis: [
             {
                 name: '监控产品',
                 type: 'category',
                 data: ['奶粉', '皮草', '香水', '奶粉', '食品'],
                 textStyle: {
-                    color: '#21272c',
+                    color: '#46CCEF',
                     fontSize: 6
                 },
                 axisLine: {
@@ -267,7 +269,7 @@ function drawBar1() {
                 splitNumber: 2,
                 max: 10,
                 axisLabel: {
-                    formatter: '{value} W'
+                    formatter: '{value} w'
                 },
                 axisLine: {
                     show: false
@@ -286,15 +288,20 @@ function drawBar1() {
                 name: '总货值',
                 type: 'bar',
                 barWidth: 10,    // bar 的宽度
+                itemStyle: {
+                    normal: {
+                        color: '#46CCEF'
+                    }
+                },
                 data: [5.5, 8.0, 9.0, 7.0, 6.5]
             }
         ]
     };
-    myChart.setOption(option4, true);
+    myChart.setOption(option4);
 };
-function drawBar2() {
-    // 基于准备好的dom，初始化echarts图表
-    var myChart = echarts.init(document.getElementById('left_bar'), 'macarons');
+function drawRightBar1() {
+    var myChart = echarts.init(document.getElementById('left_bar'));
+    /*, 'macarons'*/
     var option4 = {
         title: {
             text: '2016年B2C',
@@ -303,18 +310,20 @@ function drawBar2() {
             textAlign: 'center',
             textStyle: {
                 fontSize: 8,
-                align: 'center'
+                align: 'center',
+                color: '#FFFFFF'
             }
         },
-        tooltip: {
-            trigger: 'axis'
-        },
-        calculable: true,
+        // tooltip: {
+        //     trigger: 'axis'
+        // },
         xAxis: [
             {
-
                 type: 'category',
                 data: ['奶粉', '皮草', '香水', '奶粉', '食品', '美国', '俄国'],
+                textStyle: {
+                    color: '#FFFFFF'
+                },
                 axisLine: {
                     show: false
                 },
@@ -353,16 +362,27 @@ function drawBar2() {
                 name: '总货值',
                 type: 'bar',
                 barWidth: '10',
+                itemStyle: {
+                    normal: {
+                        color: function (params) {
+                            var colorList = [
+                                '#FE0606', '#FF6E0B', '#FE9A04', '#FECD04', '#FFFF0F', '#AFE708', '#0ACE0A'
+                            ];
+                            return colorList[params.dataIndex]
+                        }
+                    }
+                },
                 data: [5.0, 7.0, 9.0, 12.0, 14.6, 16.7, 18.6]
 
             }
         ]
     };
-    myChart.setOption(option4, true);
+    myChart.setOption(option4);
 };
-function drawBar3() {
+function drawRightBar2() {
     // 基于准备好的dom，初始化echarts图表
-    var myChart = echarts.init(document.getElementById('right_bar'), 'macarons');
+    var myChart = echarts.init(document.getElementById('right_bar'));
+    /*, 'macarons'*/
     var option4 = {
         title: {
             text: '2016年B2C',
@@ -371,13 +391,13 @@ function drawBar3() {
             textAlign: 'center',
             textStyle: {
                 fontSize: 8,
-                align: 'center'
+                align: 'center',
+                color: '#FFFFFF'
             }
         },
-        tooltip: {
-            trigger: 'axis'
-        },
-        calculable: true,
+        // tooltip: {
+        //     trigger: 'axis'
+        // },
         xAxis: [
             {
 
@@ -425,14 +445,24 @@ function drawBar3() {
                 name: '总货值',
                 type: 'bar',
                 barWidth: '10',
+                itemStyle: {
+                    normal: {
+                        color: function (params) {
+                            var colorList = [
+                                '#FE0606', '#FF6E0B', '#FE9A04', '#FECD04', '#FFFF0F', '#AFE708', '#0ACE0A'
+                            ];
+                            return colorList[params.dataIndex]
+                        }
+                    }
+                },
                 data: [5.0, 7.0, 9.0, 12.0, 14.6, 16.7, 18.6]
 
             }
         ]
     };
-    myChart.setOption(option4, true);
+    myChart.setOption(option4);
 };
-function drawLine1() {
+function drawRightLine1() {
     // 基于准备好的dom，初始化echarts图表
     var myChart = echarts.init(document.getElementById('left_line'));
     var option1 = {
@@ -447,10 +477,9 @@ function drawLine1() {
                 color: '#FFFFFF'
             }
         },
-        tooltip: {
-            trigger: 'axis'
-        },
-        calculable: true,
+        // tooltip: {
+        //     trigger: 'axis'
+        // },
         xAxis: [
             {
                 name: '备案园区',
@@ -467,15 +496,32 @@ function drawLine1() {
 
                     }
                 },
+                axisLine: {
+                    show: false,
+                    textStyle: {
+                        color: '#797979'
+                    }
+                },
                 axisTick: {
                     inside: true,
-                    length: 5,
-                    lineStyle:{
-                        color:"#FFFFFF"
+                    length: 2,
+                    lineStyle: {
+                        color: "#FFFFFF"
                     }
                 },
                 splitLine: {
                     show: false
+                },
+                markLine: {
+                    symbolSize: ['none'],
+                    itemStyle: {
+                        emphasis: {
+                            lineStyle: {
+                                type: 'dotted',
+                                width: 1
+                            }
+                        }
+                    }
                 }
 
 
@@ -496,12 +542,15 @@ function drawLine1() {
                 axisLabel: {
                     formatter: '{value} w'
                 },
+                axisLine: {
+                    show: false
+                },
                 axisTick: {
                     show: true,
-                    length: 5,
+                    length: 2,
                     inside: true,
-                    lineStyle:{
-                        color:"#FFFFFF"
+                    lineStyle: {
+                        color: "#FFFFFF"
                     }
                 },
                 splitLine: {
@@ -511,9 +560,9 @@ function drawLine1() {
         ],
         grid: {
             x: '20%',
-            y:'10%',
+            y: '10%',
             width: '60%',
-            height:'80%'
+            height: '80%'
         },
         series: [
             {
@@ -528,7 +577,7 @@ function drawLine1() {
     // 为echarts对象加载数据
     myChart.setOption(option1, true);
 };
-function drawLine2() {
+function drawRightLine2() {
     var myChart = echarts.init(document.getElementById('right_line'));
     var option2 = {
         title: {
@@ -542,10 +591,9 @@ function drawLine2() {
                 color: '#FFFFFF'
             }
         },
-        tooltip: {
-            trigger: 'axis'
-        },
-        calculable: true,
+        // tooltip: {
+        //     trigger: 'axis'
+        // },
         xAxis: [
             {
                 name: '电商平台',
@@ -562,9 +610,9 @@ function drawLine2() {
                 },
                 axisTick: {
                     inside: true,
-                    length: 5,
-                    lineStyle:{
-                        color:"#FFFFFF"
+                    length: 2,
+                    lineStyle: {
+                        color: "#FFFFFF"
                     }
                 },
                 splitLine: {
@@ -582,10 +630,10 @@ function drawLine2() {
                 },
                 axisTick: {
                     show: true,
-                    length: 5,
+                    length: 2,
                     inside: true,
-                    lineStyle:{
-                        color:"#FFFFFF"
+                    lineStyle: {
+                        color: "#FFFFFF"
                     }
                 },
                 splitLine: {
@@ -611,5 +659,402 @@ function drawLine2() {
     // 为echarts对象加载数据
     myChart.setOption(option2, true);
 };
+function drawCenterLine1() {
+    // 基于准备好的dom，初始化echarts图表
+    var myChart = echarts.init(document.getElementById('center_line1'));
+    var option1 = {
+        // title: {
+        //     show: true,
+        //     text: '企业备案数量',
+        //     x: 'center',
+        //     y: 0,
+        //     textStyle: {
+        //         fontSize: 8,
+        //         fontWeight: 'bolder',
+        //         color: '#FFFFFF'
+        //     }
+        // },
+        // tooltip: {
+        //     trigger: 'axis'
+        // },
+        xAxis: [
+            {
+                name: '备案园区',
+                type: 'category',
+                boundaryGap: true,
+                data: ['江干园区', '滨江园区', '上城园区', '下城园区', '萧山园区', '西湖园区', '拱墅园区', '富阳园区', '余杭园区'],
+                axisLabel: {
+                    //X轴刻度配置
+                    interval: 0,      //0：表示全部显示不间隔；auto:表示自动根据刻度个数和宽度自动设置间隔个数
+                    textStyle: {
+                        align: 'center',
+                        color: '#797979',
+                        fontSize: 8
+
+                    }
+                },
+                axisLine: {
+                    show: false,
+                    textStyle: {
+                        color: '#797979'
+                    }
+                },
+                axisTick: {
+                    inside: true,
+                    length: 2,
+                    lineStyle: {
+                        color: "#FFFFFF"
+                    }
+                },
+                splitLine: {
+                    show: false
+                },
+                markLine: {
+                    symbolSize: ['none'],
+                    itemStyle: {
+                        emphasis: {
+                            lineStyle: {
+                                type: 'dotted',
+                                width: 1
+                            }
+                        }
+                    }
+                }
+
+
+            }
+        ],
+        yAxis: [
+            {
+                name: '备案数量',
+                type: 'value',
+                max: 20,
+                boundaryGap: [0.2, 0.2],
+                textStyle: {
+                    // align: 'center',
+                    color: '#797979',
+                    fontSize: 8
+
+                },
+                axisLabel: {
+                    formatter: '{value} w'
+                },
+                axisLine: {
+                    show: false
+                },
+                axisTick: {
+                    show: true,
+                    length: 2,
+                    inside: true,
+                    lineStyle: {
+                        color: "#FFFFFF"
+                    }
+                },
+                splitLine: {
+                    show: false
+                }
+            }
+        ],
+        grid: {
+            x: '10%',
+            y: '10%',
+            width: '80%',
+            height: '80%'
+        },
+        series: [
+            {
+                name: '数量',
+                type: 'line',
+                stack: '总量',
+
+                data: [10, 8, 11, 12, 15, 12.5, 8, 7, 7.5]
+            }
+        ]
+    };
+    // 为echarts对象加载数据
+    myChart.setOption(option1, true);
+};
+function drawCenterLine2() {
+    var myChart = echarts.init(document.getElementById('center_line2'));
+    var option2 = {
+        // title: {
+        //     show: true,
+        //     text: '商品备案数量',
+        //     x: 'center',
+        //     y: 0,
+        //     textStyle: {
+        //         fontSize: 8,
+        //         fontWeight: 'bolder',
+        //         color: '#FFFFFF'
+        //     }
+        // },
+        // tooltip: {
+        //     trigger: 'axis'
+        // },
+        xAxis: [
+            {
+                name: '电商平台',
+                type: 'category',
+                boundaryGap: true,
+                data: ['天猫国际', '京东', '淘宝', '考拉海购', '亚马逊', '苏宁易购', '一号店', '聚美优品', '蘑菇街'],
+                axisLabel: {
+                    //X轴刻度配置
+                    interval: 0,      //0：表示全部显示不间隔；auto:表示自动根据刻度个数和宽度自动设置间隔个数
+                    textStyle: {
+                        align: 'center'
+
+                    }
+                },
+                axisTick: {
+                    inside: true,
+                    length: 2,
+                    lineStyle: {
+                        color: "#FFFFFF"
+                    }
+                },
+                splitLine: {
+                    show: false
+                }
+            }
+        ],
+        yAxis: [
+            {
+                name: '备案数量',
+                type: 'value',
+                max: 20,
+                axisLabel: {
+                    formatter: '{value} w'
+                },
+                axisTick: {
+                    show: true,
+                    length: 2,
+                    inside: true,
+                    lineStyle: {
+                        color: "#FFFFFF"
+                    }
+                },
+                splitLine: {
+                    show: false
+                }
+            }
+        ],
+        grid: {
+            x: '10%',
+            y: '10%',
+            width: '80%',
+            height: '80%'
+        },
+        series: [
+            {
+                name: '数量',
+                type: 'line',
+                stack: '总量',
+                data: [10, 8, 11, 12, 15, 12.5, 8, 7, 7.5]
+            }
+        ]
+    };
+    // 为echarts对象加载数据
+    myChart.setOption(option2, true);
+}
+function drawCenterBar1() {
+    var myChart = echarts.init(document.getElementById('center_bar1'));
+    /*, 'macarons'*/
+    var option4 = {
+        xAxis: [
+            {
+                type: 'category',
+                data: ['奶粉', '皮草', '香水', '奶粉', '食品', '美国', '俄国'],
+                textStyle: {
+                    color: '#FFFFFF'
+                },
+                axisLine: {
+                    show: false
+                },
+                axisTick: {
+                    show: false
+                },
+                splitLine: {
+                    show: false
+                }
+            }
+        ],
+        yAxis: [
+            {
+                type: 'value',
+//                    splitNumber:3,
+                max: 20,
+                axisLabel: {
+                    formatter: '{value} W'
+                },
+                axisLine: {
+                    show: false
+                }
+            }
+
+        ],
+        grid: {
+            x: '10%',
+            y: '10%',
+            width: '80%',
+            height: '80%',
+            // backgroundColor: '#969696',
+
+        },
+        series: [
+            {
+                name: '总货值',
+                type: 'bar',
+                barWidth: '25',
+                itemStyle: {
+                    normal: {
+                        color: function (params) {
+                            var colorList = [
+                                '#FE0606', '#FF6E0B', '#FE9A04', '#FECD04', '#FFFF0F', '#AFE708', '#0ACE0A'
+                            ];
+                            return colorList[params.dataIndex]
+                        }
+                    }
+                },
+                data: [5.0, 7.0, 9.0, 12.0, 14.6, 16.7, 18.6]
+
+            }
+        ]
+    };
+    myChart.setOption(option4);
+};
+function drawCenterBar2() {
+    // 基于准备好的dom，初始化echarts图表
+    var myChart = echarts.init(document.getElementById('center_bar2'));
+    /*, 'macarons'*/
+    var option4 = {
+        xAxis: [
+            {
+
+                type: 'category',
+                data: ['奶粉', '皮草', '香水', '奶粉', '食品', '美国', '俄国'],
+                textStyle: {
+                    color: '#FFFFFF',
+                    fontSize: 8
+                },
+                axisLine: {
+                    show: false
+                },
+                axisTick: {
+                    show: false
+                },
+                splitLine: {
+                    show: false
+                }
+            }
+        ],
+        yAxis: [
+            {
+                type: 'value',
+//                    splitNumber:3,
+                max: 20,
+                axisLabel: {
+                    formatter: '{value} w'
+                },
+                axisLine: {
+                    show: false
+                }
+            }
+
+        ],
+        grid: {
+            x: '10%',
+            y: '10%',
+            width: '80%',
+            height: '80%',
+            // backgroundColor: '#969696',
+
+        },
+        series: [
+            {
+                name: '总货值',
+                type: 'bar',
+                barWidth: '25',
+                itemStyle: {
+                    normal: {
+                        color: function (params) {
+                            var colorList = [
+                                '#FE0606', '#FF6E0B', '#FE9A04', '#FECD04', '#FFFF0F', '#AFE708', '#0ACE0A'
+                            ];
+                            return colorList[params.dataIndex]
+                        }
+                    }
+                },
+                data: [5.0, 7.0, 9.0, 12.0, 14.6, 16.7, 18.6]
+
+            }
+        ]
+    };
+    myChart.setOption(option4);
+};
+function drawCenterBar3() {
+    var myChart = echarts.init(document.getElementById('center_bar3'));
+    /*, 'macarons'*/
+    var option4 = {
+        // tooltip: {
+        //     trigger: 'axis'
+        // },
+        xAxis: [
+            {
+                name: '监控产品',
+                type: 'category',
+                data: ['奶粉', '皮草', '香水', '奶粉', '食品'],
+                textStyle: {
+                    color: '#46CCEF',
+                    fontSize: 6
+                },
+                axisLine: {
+                    show: false
+                },
+                axisTick: {
+                    show: false
+                },
+                splitLine: {
+                    show: false
+                }
+            }
+        ],
+        yAxis: [
+            {
+                name: '数量',
+                type: 'value',
+                splitNumber: 2,
+                max: 10,
+                axisLabel: {
+                    formatter: '{value} w'
+                },
+                axisLine: {
+                    show: false
+                }
+            }
+
+        ],
+        grid: {
+            x: '10%',
+            y: '20%',
+            width: '80%',
+            height: '70%'
+        },
+        series: [
+            {
+                name: '总货值',
+                type: 'bar',
+                barWidth: 35,    // bar 的宽度
+                itemStyle: {
+                    normal: {
+                        color: '#46CCEF'
+                    }
+                },
+                data: [5.5, 8.0, 9.0, 7.0, 6.5]
+            }
+        ]
+    };
+    myChart.setOption(option4);
+};
+
 
 /*21272c 50%  49dbff*/

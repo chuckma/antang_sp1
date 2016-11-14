@@ -4,12 +4,10 @@
 
 #centerDataCloud {
     height: 45%;
-    width: 45%;
-    position: relative;
-    /*left:5%;*/
+    width: 25%;
+    position: fixed;
+    left:23%;
     padding:0;
-    float: left;
-    /*margin: 0 80% auto 20%;*/
     border: solid 0.5px;
     border-color: #fd971f;
 

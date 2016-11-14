@@ -3,27 +3,27 @@ svn:wc:ra_dav:version-url
 V 57
 /svn/antang/!svn/ver/2165/cms/hzkjzh/WebRoot/screen/image
 END
-globBg.png
-K 25
-svn:wc:ra_dav:version-url
-V 68
-/svn/antang/!svn/ver/2139/cms/hzkjzh/WebRoot/screen/image/globBg.png
-END
 hangzhouMap.png
 K 25
 svn:wc:ra_dav:version-url
 V 73
 /svn/antang/!svn/ver/2139/cms/hzkjzh/WebRoot/screen/image/hangzhouMap.png
 END
-imgBar.png
-K 25
-svn:wc:ra_dav:version-url
-V 68
-/svn/antang/!svn/ver/2165/cms/hzkjzh/WebRoot/screen/image/imgBar.png
-END
 worldMap.png
 K 25
 svn:wc:ra_dav:version-url
 V 70
 /svn/antang/!svn/ver/2139/cms/hzkjzh/WebRoot/screen/image/worldMap.png
+END
+globBg.png
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/antang/!svn/ver/2139/cms/hzkjzh/WebRoot/screen/image/globBg.png
+END
+imgBar.png
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/antang/!svn/ver/2165/cms/hzkjzh/WebRoot/screen/image/imgBar.png
 END

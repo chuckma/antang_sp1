@@ -188,19 +188,19 @@
         </div>
     </div>
     <div id="center">
-        <div id="centertitle1">
-            <h2 id="centerTopLine1">企业备案数量</h2>
-            <img src="image/imgBar.png" alt="ddd" id="img_line1">
-            <h2 id="centerTopLine2">商品备案数量</h2>
-            <img src="image/imgBar.png" alt="ddd" id="img_line2">
+        <div id="centerTitle1">
+            <h2>企业备案数量</h2>
+        </div>
+        <div id="centerTitle3">
+            <h2>商品备案数量</h2><!-- id="centerTopLine2"-->
         </div>
         <div id="center_line1" class="center_chart"></div>
         <div id="center_line2" class="center_chart"></div>
-        <div id="centertitle2">
-            <h2 id="centerBottomBar1">2016B2B</h2>
-            <img src="image/imgBar.png" alt="ddd" id="img_bar1">
-            <h2 id="centerBottomBar2">2016B2C</h2>
-            <img src="image/imgBar.png" alt="ddd" id="img_bar2">
+        <div id="centerTitle2">
+            <h2>2016B2B</h2>
+        </div>
+        <div id="centerTitle4">
+            <h2>2016B2B</h2>
         </div>
         <div id="center_bar1" class="center_chart"></div>
         <div id="center_bar2" class="center_chart"></div>

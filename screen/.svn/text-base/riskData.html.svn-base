@@ -188,11 +188,11 @@
         </div>
     </div>
     <div id="center">
-        <div>
-            <h2 id="centerTopLine1">出口货物信息</h2>
-            <img src="image/imgBar.png" alt="ddd" id="img_line1">
-            <h2 id="centerTopLine2">入境不合格信息</h2>
-            <img src="image/imgBar.png" alt="ddd" id="img_line2">
+        <div id="centerTopLine1">
+            <h2>出口货物信息</h2>
+        </div>
+        <div id="centerTopLine2">
+            <h2>入境不合格信息</h2>
         </div>
         <div id="center_top"></div>
 

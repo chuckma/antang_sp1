@@ -2,18 +2,20 @@
     background: #6A5ACD;
 }
 
-#centerDataCloud {
+#div1 {
     height: 45%;
-    width: 25%;
-    position: fixed;
-    left:23%;
+    width: 45%;
+    position: relative;
+    /*left:5%;*/
     padding:0;
-    border: solid 0.5px;
-    border-color: #fd971f;
+    float: left;
+    /*margin: 0 80% auto 20%;*/
+    /*border: solid 0.5px;*/
+    /*border-color: #fd971f;*/
 
 }
 
-#centerDataCloud a {
+#div1 a {
     position: absolute;
     top: 0px;
     left: 0px;
@@ -23,7 +25,7 @@
     padding: 3px 6px;
 }
 
-#centerDataCloud a:hover {
+#div1 a:hover {
     border: 1px solid #eee;
     background: #000;
     border-radius: 5px;

@@ -3,12 +3,13 @@
 }
 
 #div1 {
-    height: 45%;
-    width: 45%;
-    position: relative;
-    /*left:5%;*/
+    position: fixed;
+    left: .5%;
+    bottom:12%;
     padding:0;
-    float: left;
+    height: 16%;
+    width: 11%;
+    /*float: left;*/
     /*margin: 0 80% auto 20%;*/
     /*border: solid 0.5px;*/
     /*border-color: #fd971f;*/

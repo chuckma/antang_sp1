@@ -1,19 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 57
-/svn/antang/!svn/ver/2165/cms/hzkjzh/WebRoot/screen/image
-END
-hangzhouMap.png
-K 25
-svn:wc:ra_dav:version-url
-V 73
-/svn/antang/!svn/ver/2139/cms/hzkjzh/WebRoot/screen/image/hangzhouMap.png
-END
-worldMap.png
-K 25
-svn:wc:ra_dav:version-url
-V 70
-/svn/antang/!svn/ver/2139/cms/hzkjzh/WebRoot/screen/image/worldMap.png
+/svn/antang/!svn/ver/2362/cms/hzkjzh/WebRoot/screen/image
 END
 globBg.png
 K 25
@@ -21,9 +9,51 @@ svn:wc:ra_dav:version-url
 V 68
 /svn/antang/!svn/ver/2139/cms/hzkjzh/WebRoot/screen/image/globBg.png
 END
+hangzhouMap.png
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/antang/!svn/ver/2139/cms/hzkjzh/WebRoot/screen/image/hangzhouMap.png
+END
 imgBar.png
 K 25
 svn:wc:ra_dav:version-url
 V 68
 /svn/antang/!svn/ver/2165/cms/hzkjzh/WebRoot/screen/image/imgBar.png
+END
+imgBar1.png
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/antang/!svn/ver/2362/cms/hzkjzh/WebRoot/screen/image/imgBar1.png
+END
+worldMap.png
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/antang/!svn/ver/2139/cms/hzkjzh/WebRoot/screen/image/worldMap.png
+END
+ccc.png
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/antang/!svn/ver/2362/cms/hzkjzh/WebRoot/screen/image/ccc.png
+END
+risk.png
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/antang/!svn/ver/2362/cms/hzkjzh/WebRoot/screen/image/risk.png
+END
+bg1.png
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/antang/!svn/ver/2362/cms/hzkjzh/WebRoot/screen/image/bg1.png
+END
+bg2.png
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/antang/!svn/ver/2362/cms/hzkjzh/WebRoot/screen/image/bg2.png
 END

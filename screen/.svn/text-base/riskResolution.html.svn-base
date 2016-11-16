@@ -49,29 +49,29 @@
                 <a href="#" target="_blank">过期</a>
                 <a href="#" target="_blank">太好了</a>
                 <a href="#" target="_blank">太假了</a>
-                <a href="#" target="_blank">垃圾</a>
-                <a href="#" target="_blank">挺好的</a>
-                <a href="#" target="_blank">高仿</a>
-                <a href="#" target="_blank">很差劲</a>
-                <a href="#" target="_blank">服务差</a>
-                <a href="#" target="_blank">骗人的</a>
-                <a href="#" target="_blank">退货</a>
-                <a href="#" target="_blank">差评</a>
-                <a href="#" target="_blank">假冒</a>
-                <a href="#" target="_blank">投诉</a>
-                <a href="#" target="_blank">太差了</a>
-                <a href="#" target="_blank">质量差</a>
-                <a href="#" target="_blank">TMD</a>
-                <a href="#" target="_blank">过期</a>
-                <a href="#" target="_blank">太好了</a>
-                <a href="#" target="_blank">太假了</a>
-                <a href="#" target="_blank">垃圾</a>
-                <a href="#" target="_blank">挺好的</a>
-                <a href="#" target="_blank">高仿</a>
-                <a href="#" target="_blank">好用</a>
-                <a href="#" target="_blank">很差劲</a>
-                <a href="#" target="_blank">服务差</a>
-                <a href="#" target="_blank">退货</a>
+                <!--<a href="#" target="_blank">垃圾</a>-->
+                <!--<a href="#" target="_blank">挺好的</a>-->
+                <!--<a href="#" target="_blank">高仿</a>-->
+                <!--<a href="#" target="_blank">很差劲</a>-->
+                <!--<a href="#" target="_blank">服务差</a>-->
+                <!--<a href="#" target="_blank">骗人的</a>-->
+                <!--<a href="#" target="_blank">退货</a>-->
+                <!--<a href="#" target="_blank">差评</a>-->
+                <!--<a href="#" target="_blank">假冒</a>-->
+                <!--<a href="#" target="_blank">投诉</a>-->
+                <!--<a href="#" target="_blank">太差了</a>-->
+                <!--<a href="#" target="_blank">质量差</a>-->
+                <!--<a href="#" target="_blank">TMD</a>-->
+                <!--<a href="#" target="_blank">过期</a>-->
+                <!--<a href="#" target="_blank">太好了</a>-->
+                <!--<a href="#" target="_blank">太假了</a>-->
+                <!--<a href="#" target="_blank">垃圾</a>-->
+                <!--<a href="#" target="_blank">挺好的</a>-->
+                <!--<a href="#" target="_blank">高仿</a>-->
+                <!--<a href="#" target="_blank">好用</a>-->
+                <!--<a href="#" target="_blank">很差劲</a>-->
+                <!--<a href="#" target="_blank">服务差</a>-->
+                <!--<a href="#" target="_blank">退货</a>-->
             </div>
             <div id="left3_d">
                 <table id="left3_table">
@@ -237,37 +237,37 @@
         <div id="center5Bottom_right">
             <table id="center_table3">
                 <tr style="color: #FFFF00;font-size: 15px;">
-                    <td>网站</td>
-                    <td>品牌</td>
-                    <td>数量</td>
+                    <td>电商企业</td>
+                    <td>检测数据</td>
+                    <td>预警信息</td>
                 </tr>
                 <tr>
                     <td colspan="3" style="height: 8px;background-color: #2e7dce"></td>
                 </tr>
                 <tr class="tr1">
-                    <td>京东</td>
+                    <td>天猫</td>
+                    <td>口红</td>
+                    <td>合格</td>
+                </tr>
+                <tr class="tr1">
+                    <td>淘宝</td>
                     <td>奶粉</td>
-                    <td>100</td>
+                    <td>合格</td>
                 </tr>
                 <tr class="tr1">
                     <td>京东</td>
-                    <td>奶粉</td>
-                    <td>100</td>
+                    <td>玩具</td>
+                    <td>合格</td>
                 </tr>
                 <tr class="tr1">
-                    <td>京东</td>
-                    <td>奶粉</td>
-                    <td>100</td>
+                    <td>考拉</td>
+                    <td>牛奶</td>
+                    <td>合格</td>
                 </tr>
                 <tr class="tr1">
-                    <td>京东</td>
-                    <td>奶粉</td>
-                    <td>100</td>
-                </tr>
-                <tr class="tr1">
-                    <td>京东</td>
-                    <td>奶粉</td>
-                    <td>100</td>
+                    <td>亚马逊</td>
+                    <td>皮草</td>
+                    <td>合格</td>
                 </tr>
             </table>
         </div>

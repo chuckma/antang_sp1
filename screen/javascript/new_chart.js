@@ -1092,7 +1092,7 @@ function drawCenterLine2() {
                 data: ['天猫国际', '京东', '淘宝', '考拉海购', '亚马逊', '苏宁易购', '一号店', '聚美优品', '蘑菇街'],
                 axisLabel: {
                     //X轴刻度配置
-                    interval: 0,      //0：表示全部显示不间隔；auto:表示自动根据刻度个数和宽度自动设置间隔个数
+                    interval: '0',      //0：表示全部显示不间隔；auto:表示自动根据刻度个数和宽度自动设置间隔个数
                     textStyle: {
                         align: 'center',
                         color:'#FFFFFF',
@@ -1495,50 +1495,33 @@ function drawCenterBar3() {
 function drawCenterScatter() {
     var myChart = echarts.init(document.getElementById('center4Bottom_right2'));
     var option1 = {
-
-        // tooltip : {
-        //     trigger: 'axis',
-        //     showDelay : 0,
-        //     formatter : function (params) {
-        //         if (params.value.length > 1) {
-        //             return params.seriesName + ' :<br/>'
-        //                 + params.value[0] + 'cm '
-        //                 + params.value[1] + 'kg ';
-        //         }
-        //         else {
-        //             return params.seriesName + ' :<br/>'
-        //                 + params.name + ' : '
-        //                 + params.value + 'kg ';
-        //         }
-        //     },
-        //     axisPointer:{
-        //         show: true,
-        //         type : 'cross',
-        //         lineStyle: {
-        //             type : 'dashed',
-        //             width : 1
-        //         }
-        //     }
-        // },
         legend: {
             itemWidth:10,
             itemHeight:7,
-            data:['女性','男性','过期']
+            data:['过期','质量差','投诉'],
+            textStyle:{
+                color:'#ffffff',
+                fontSize:10
+            }
         },
         xAxis : [
             {
                 name:'不合格分布',
-                type : 'value',
-                scale:true,
+                type : 'category',
+                // scale:true,
                 data:['美国','英国','日本','韩国','印度','俄罗斯'],
                 axisLabel : {
-                    align:'left',
+                    align:'right',
                     textStyle: {
                         color: '#FFFFFF'
                     }
                 },
                 axisTick: {
-                    show: false
+                    show: true,
+                    inside:true
+                },
+                axisLine:{
+                  show:false
                 },
                 splitLine: {
                     show: false
@@ -1552,25 +1535,32 @@ function drawCenterScatter() {
                 type : 'value',
                 max:100,
                 min:0,
-                scale:false,
+                scale:true,
                 axisLabel : {
                     formatter: '{value} w',
                     textStyle:{
-                        color:'#FF0000'	,
+                        color:'#FFFFFF'	,
                         fontSize:9
                     }
+                },
+                axisLine:{
+                    show:false
+                },
+                splitLine: {
+                    show: false
                 }
+
             }
         ],
         grid:{
             x:'10%',
-            y:'2%',
+            y:'8%',
             width:'80%',
             height:'80%'
         },
         series : [
             {
-                name:'女性',
+                name:'过期',
                 type:'scatter',
                 symbolSize:3,
                 data: [51.6, 59.0,49.2,63.0, 53.6,59.0],
@@ -1588,7 +1578,7 @@ function drawCenterScatter() {
                 }
             },
             {
-                name:'过期',
+                name:'质量差',
                 type:'scatter',
                 data: [40.6,44.0,30.2, 12.0, 22.6,59.0],
                 //        59.0,65.6,69.8, 66.8, 45.2,
@@ -1606,7 +1596,7 @@ function drawCenterScatter() {
                 }
             },
             {
-                name:'男性',
+                name:'投诉',
                 type:'scatter',
                 data: [65.6, 71.8,  80.7,72.6, 78.8,74.8],
                        // 74.8, 86.4,  78.4,62.0, 81.6,

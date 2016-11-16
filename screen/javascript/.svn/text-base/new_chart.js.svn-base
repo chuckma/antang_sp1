@@ -776,15 +776,15 @@ function drawRightLine1() {
             {
                 name: '备案园区',
                 type: 'category',
-                boundaryGap: true,
+                boundaryGap: false,
                 data: ['江干园区', '滨江园区', '上城园区', '下城园区', '萧山园区', '西湖园区', '拱墅园区', '富阳园区', '余杭园区'],
                 axisLabel: {
                     //X轴刻度配置
                     interval: 0,      //0：表示全部显示不间隔；auto:表示自动根据刻度个数和宽度自动设置间隔个数
                     textStyle: {
                         align: 'center',
-                        color: '#797979',
-                        fontSize: 8
+                        color: '#FFFFFF',
+                        fontSize: 10
 
                     }
                 },
@@ -889,13 +889,14 @@ function drawRightLine2() {
             {
                 name: '电商平台',
                 type: 'category',
-                boundaryGap: true,
+                boundaryGap: false,
                 data: ['天猫国际', '京东', '淘宝', '考拉海购', '亚马逊', '苏宁易购', '一号店', '聚美优品', '蘑菇街'],
                 axisLabel: {
                     //X轴刻度配置
                     interval: 0,      //0：表示全部显示不间隔；auto:表示自动根据刻度个数和宽度自动设置间隔个数
                     textStyle: {
-                        align: 'center'
+                        align: 'center',
+                        color:'#FFFFFF'
 
                     }
                 },
@@ -982,15 +983,15 @@ function drawCenterLine1() {
             {
                 name: '备案园区',
                 type: 'category',
-                boundaryGap: true,
+                boundaryGap: false,
                 data: ['江干园区', '滨江园区', '上城园区', '下城园区', '萧山园区', '西湖园区', '拱墅园区', '富阳园区', '余杭园区'],
                 axisLabel: {
                     //X轴刻度配置
                     interval: 0,      //0：表示全部显示不间隔；auto:表示自动根据刻度个数和宽度自动设置间隔个数
                     textStyle: {
                         align: 'center',
-                        color: '#797979',
-                        fontSize: 8
+                        color: '#FFFFFF',
+                        fontSize: 9
 
                     }
                 },
@@ -1087,15 +1088,20 @@ function drawCenterLine2() {
             {
                 name: '电商平台',
                 type: 'category',
-                boundaryGap: true,
+                boundaryGap: false,
                 data: ['天猫国际', '京东', '淘宝', '考拉海购', '亚马逊', '苏宁易购', '一号店', '聚美优品', '蘑菇街'],
                 axisLabel: {
                     //X轴刻度配置
                     interval: 0,      //0：表示全部显示不间隔；auto:表示自动根据刻度个数和宽度自动设置间隔个数
                     textStyle: {
-                        align: 'center'
+                        align: 'center',
+                        color:'#FFFFFF',
+                        fontSize:9
 
                     }
+                },
+                axisLine: {
+                    show: false
                 },
                 axisTick: {
                     inside: true,
@@ -1121,6 +1127,9 @@ function drawCenterLine2() {
                         fontSize: 12
 
                     },
+                },
+                axisLine: {
+                    show: false
                 },
                 axisTick: {
                     show: true,
@@ -1152,7 +1161,7 @@ function drawCenterLine2() {
     };
     // 为echarts对象加载数据
     myChart.setOption(option2, true);
-}
+};
 function drawCenterLine3() {
     var myChart = echarts.init(document.getElementById('center4Bottom_right2'));
     var option = {
@@ -1267,90 +1276,9 @@ function drawCenterLine3() {
             }
         ]
     };
-    // var option2 = {
-    //     legend:{
-    //         show:true,
-    //         x:'center',
-    //         data:['不合格数量','不合格分布']
-    //     },
-    //     xAxis: [
-    //         {
-    //             // name: '电商平台',
-    //             type: 'category',
-    //             boundaryGap:false,
-    //             data: ['奶粉', '牛奶', '香水', '口红', '皮草', '烟草', '玩具', '手机'],
-    //             textStyle:{
-    //
-    //             },
-    //             axisLabel: {
-    //                 //X轴刻度配置
-    //                 interval: 0,      //0：表示全部显示不间隔；auto:表示自动根据刻度个数和宽度自动设置间隔个数
-    //                 textStyle: {
-    //                     align: 'center',
-    //                     color:'#FFFFFF'
-    //                 }
-    //             },
-    //             axisTick: {
-    //                 inside: true,
-    //                 length: 5,
-    //                 lineStyle: {
-    //                     color: "#FFFFFF"
-    //                 }
-    //             },
-    //             splitLine: {
-    //                 show: false
-    //             }
-    //         }
-    //     ],
-    //     yAxis: [
-    //         {
-    //             name: '数量',
-    //             type: 'value',
-    //             max: 120,
-    //             axisLabel: {
-    //                 formatter: '{value}',
-    //                 textStyle: {
-    //                     fontSize:10,
-    //                     color:'#FFFFFF'
-    //                 }
-    //             },
-    //             axisTick: {
-    //                 show: true,
-    //                 length: 5,
-    //                 lineStyle: {
-    //                     color: "#FFFFFF"
-    //                 }
-    //             },
-    //             splitLine: {
-    //                 show: false
-    //             }
-    //         }
-    //     ],
-    //     grid: {
-    //         x: '10%',
-    //         y: '30%',
-    //         width: '85%',
-    //         height: '50%'
-    //     },
-    //     series: [
-    //         {
-    //             name: '数量',
-    //             type: 'line',
-    //             stack: '总量',
-    //             data: [48, 68, 68, 88, 48, 60, 60, 100]
-    //         },
-    //         {
-    //             name: '分布',
-    //             name: '分布',
-    //             type: 'line',
-    //             stack: '总量',
-    //             data: [73, 58, 58, 100, 73, 102, 79, 90]
-    //         }
-    //     ]
-    // };
-    // 为echarts对象加载数据
+
     myChart.setOption(option, true);
-}
+};
 function drawCenterBar1() {
     var myChart = echarts.init(document.getElementById('center_bar1'));
     /*, 'macarons'*/
@@ -1564,6 +1492,142 @@ function drawCenterBar3() {
     };
     myChart.setOption(option4);
 };
+function drawCenterScatter() {
+    var myChart = echarts.init(document.getElementById('center4Bottom_right2'));
+    var option1 = {
 
+        // tooltip : {
+        //     trigger: 'axis',
+        //     showDelay : 0,
+        //     formatter : function (params) {
+        //         if (params.value.length > 1) {
+        //             return params.seriesName + ' :<br/>'
+        //                 + params.value[0] + 'cm '
+        //                 + params.value[1] + 'kg ';
+        //         }
+        //         else {
+        //             return params.seriesName + ' :<br/>'
+        //                 + params.name + ' : '
+        //                 + params.value + 'kg ';
+        //         }
+        //     },
+        //     axisPointer:{
+        //         show: true,
+        //         type : 'cross',
+        //         lineStyle: {
+        //             type : 'dashed',
+        //             width : 1
+        //         }
+        //     }
+        // },
+        legend: {
+            itemWidth:10,
+            itemHeight:7,
+            data:['女性','男性','过期']
+        },
+        xAxis : [
+            {
+                name:'不合格分布',
+                type : 'value',
+                scale:true,
+                data:['美国','英国','日本','韩国','印度','俄罗斯'],
+                axisLabel : {
+                    align:'left',
+                    textStyle: {
+                        color: '#FFFFFF'
+                    }
+                },
+                axisTick: {
+                    show: false
+                },
+                splitLine: {
+                    show: false
+                }
+
+            }
+        ],
+        yAxis : [
+            {
+                name:'不合格数量',
+                type : 'value',
+                max:100,
+                min:0,
+                scale:false,
+                axisLabel : {
+                    formatter: '{value} w',
+                    textStyle:{
+                        color:'#FF0000'	,
+                        fontSize:9
+                    }
+                }
+            }
+        ],
+        grid:{
+            x:'10%',
+            y:'2%',
+            width:'80%',
+            height:'80%'
+        },
+        series : [
+            {
+                name:'女性',
+                type:'scatter',
+                symbolSize:3,
+                data: [51.6, 59.0,49.2,63.0, 53.6,59.0],
+                    // 59.0, 47.6, 69.8, 66.8,75.2,
+                    // 55.2, 54.2, 62.5, 42.0, 50.0,
+                    // 49.8, 49.2, 73.2, 47.8, 68.8,
+                    // 50.6, 82.5, 57.2, 87.8, 72.8,
+                    // 54.5, 59.8, 67.3, 67.8, 47.0,
+                    // 46.2, 55.0, 83.0, 54.4, 45.8],
+                markPoint : {
+                    data : [
+                        {type : 'max', name: '最大值'},
+                        {type : 'min', name: '最小值'}
+                    ]
+                }
+            },
+            {
+                name:'过期',
+                type:'scatter',
+                data: [40.6,44.0,30.2, 12.0, 22.6,59.0],
+                //        59.0,65.6,69.8, 66.8, 45.2,
+                //        66.2,43.2,23.5, 42.0, 78.0,
+                //        12.8,49.2,73.2, 56.8, 90.8,
+                //        34.6,82.5,57.2, 87.8, 55.8,
+                //        16.5,59.8,67.3, 13.8, 44.0,
+                //        46.2,55.0,83.0, 34.4, 45.8
+                // ],
+                markPoint : {
+                    data : [
+                        {type : 'max', name: '最大值'},
+                        {type : 'min', name: '最小值'}
+                    ]
+                }
+            },
+            {
+                name:'男性',
+                type:'scatter',
+                data: [65.6, 71.8,  80.7,72.6, 78.8,74.8],
+                       // 74.8, 86.4,  78.4,62.0, 81.6,
+                       // 76.6, 83.6,  90.0,74.6, 71.0,
+                       // 79.6, 93.8,  70.0,72.4, 85.9,
+                       // 78.8, 77.8,  66.2,86.4, 81.8,
+                       // 89.6, 82.8,  76.4,63.2, 60.9,
+                       // 74.8, 70.0,  72.4,84.1, 69.1,
+                       // 59.5, 67.2,  61.3,68.6, 80.1,
+                       // 87.8, 84.7,  73.4,72.1, 82.6],
+
+                markPoint : {
+                    data : [
+                        {type : 'max', name: '最大值'},
+                        {type : 'min', name: '最小值'}
+                    ]
+                }
+            }
+        ]
+    };
+    myChart.setOption(option1, true);
+};
 
 /*21272c 50%  49dbff*/

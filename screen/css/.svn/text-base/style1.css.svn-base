@@ -1,31 +1,26 @@
 ﻿body {
-    background: #6A5ACD;
+    background: #09c;
 }
 
-#div1 {
-    height: 45%;
-    width: 45%;
-    position: relative;
-    /*left:5%;*/
-    padding:0;
-    float: left;
-    /*margin: 0 80% auto 20%;*/
-    /*border: solid 0.5px;*/
-    /*border-color: #fd971f;*/
-
+#centerDataCloud {
+    position: fixed;
+    top:0;
+    left:22%;
+    height: 49%;
+    width: 28%;
+    margin: 16px auto;
 }
 
-#div1 a {
+#centerDataCloud a {
     position: absolute;
     top: 0px;
     left: 0px;
     color: #fff;
     font-weight: bold;
-    font-size: 5px;
     padding: 3px 6px;
 }
 
-#div1 a:hover {
+#centerDataCloud a:hover {
     border: 1px solid #eee;
     background: #000;
     border-radius: 5px;

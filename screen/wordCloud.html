@@ -2,54 +2,202 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>数据云图</title>
-    <link rel="stylesheet" href="css/style1.css">
-    <script type="text/javascript" src="javascript/lrtk.js"></script>
+    <title>散点图</title>
     <style type="text/css">
-        #div1{
+        #div1 {
             position: fixed;
-            top:5%;
-            left:25%;
-            width:45%;
-            height:50%;
-            border:solid 1px #15cff8;
+            top: 5%;
+            left: 25%;
+            width: 45%;
+            height: 50%;
+            border: solid 1px #15cff8;
         }
     </style>
 </head>
 <body>
-<div id="div1">
-    <a href="#" target="_blank">差评</a>
-    <a href="#" target="_blank">假冒</a>
-    <a href="#" target="_blank">投诉</a>
-    <a href="#" target="_blank">太差了</a>
-    <a href="#" target="_blank">质量差</a>
-    <a href="#" target="_blank">TMD</a>
-    <a href="#" target="_blank">过期</a>
-    <a href="#" target="_blank">太好了</a>
-    <a href="#" target="_blank">太假了</a>
-    <a href="#" target="_blank">垃圾</a>
-    <a href="#" target="_blank">挺好的</a>
-    <a href="#" target="_blank">高仿</a>
-    <a href="#" target="_blank">很差劲</a>
-    <a href="#" target="_blank">服务差</a>
-    <a href="#" target="_blank">骗人的</a>
-    <a href="#" target="_blank">退货</a>
-    <a href="#" target="_blank">差评</a>
-    <a href="#" target="_blank">假冒</a>
-    <a href="#" target="_blank">投诉</a>
-    <a href="#" target="_blank">太差了</a>
-    <a href="#" target="_blank">质量差</a>
-    <a href="#" target="_blank">TMD</a>
-    <a href="#" target="_blank">过期</a>
-    <a href="#" target="_blank">太好了</a>
-    <a href="#" target="_blank">太假了</a>
-    <a href="#" target="_blank">垃圾</a>
-    <a href="#" target="_blank">挺好的</a>
-    <a href="#" target="_blank">高仿</a>
-    <a href="#" target="_blank">好用</a>
-    <a href="#" target="_blank">很差劲</a>
-    <a href="#" target="_blank">服务差</a>
-    <a href="#" target="_blank">退货</a>
-</div>
+<div id="div1"></div>
+<script src="javascript/echarts-all.js"></script>
+<script type="text/javascript">
+    drawScatter();
+    function drawScatter() {
+        var myChart = echarts.init(document.getElementById('div1'));
+        var option = {
+            legend: {
+                itemWidth: 10,
+                itemHeight: 7,
+                data: ['女性', '男性', '过期']
+            },
+            xAxis: [
+                {
+                    name: '不合格分布',
+                    type: 'value',
+                    scale: true,
+                    data: ['美国', '英国', '日本', '韩国', '印度', '俄罗斯'],
+                    axisLine: {
+                        lineStyle: {
+                            width: 2
+                        }
+                    },
+                    axisLabel: {
+                        textStyle: {
+                            fontSize: 9
+                        }
+                    },
+                    splitLine: {
+                        show: false
+                    }
+
+                }
+            ],
+            yAxis: [
+                {
+                    name: '不合格数量',
+                    type: 'value',
+                    max: 100,
+                    min: 0,
+                    scale: false,
+                    axisLabel: {
+                        formatter: '{value} w',
+                        textStyle: {
+                            color: '#FF0000',
+                            fontSize: 9
+                        }
+                    },
+                    axisLine: {
+                        lineStyle: {
+                            width: 2
+                        }
+                    },
+                    splitLine: {
+                        show: false
+                    }
+                }
+            ],
+            series: [
+                {
+                    name: '女性',
+                    type: 'scatter',
+                    symbol: 'circle',
+                    symbolSize: 3,
+                    data: [[161.2, 51.6], [167.5, 59.0], [159.5, 49.2], [157.0, 63.0], [155.8, 53.6],
+                        [170.0, 59.0], [159.1, 47.6], [166.0, 69.8], [176.2, 66.8], [160.2, 75.2],
+                        [172.5, 55.2], [170.9, 54.2], [172.9, 62.5], [153.4, 42.0], [160.0, 50.0],
+                        [147.2, 49.8], [168.2, 49.2], [175.0, 73.2], [157.0, 47.8], [167.6, 68.8],
+                        [159.5, 50.6], [175.0, 82.5], [166.8, 57.2], [176.5, 87.8], [170.2, 72.8],
+                        [174.0, 54.5], [173.0, 59.8], [179.9, 67.3], [170.5, 67.8], [160.0, 47.0],
+                        [154.4, 46.2], [162.0, 55.0], [176.5, 83.0], [160.0, 54.4], [152.0, 45.8]
+                    ],
+                    markPoint: {
+                        data: [
+                            {type: 'max', name: '最大值'},
+                            {type: 'min', name: '最小值'}
+                        ]
+                    }
+                },
+                {
+                    name: '过期',
+                    type: 'scatter',
+                    symbol: 'circle',
+                    data: [[161.2, 40.6], [167.5, 44.0], [159.5, 30.2], [157.0, 12.0], [155.8, 22.6],
+                        [170.0, 59.0], [159.1, 65.6], [166.0, 69.8], [176.2, 66.8], [160.2, 45.2],
+                        [172.5, 66.2], [170.9, 43.2], [172.9, 23.5], [153.4, 42.0], [160.0, 78.0],
+                        [147.2, 12.8], [168.2, 49.2], [175.0, 73.2], [157.0, 56.8], [167.6, 90.8],
+                        [159.5, 34.6], [175.0, 82.5], [166.8, 57.2], [176.5, 87.8], [170.2, 55.8],
+                        [174.0, 16.5], [173.0, 59.8], [179.9, 67.3], [170.5, 13.8], [160.0, 44.0],
+                        [154.4, 46.2], [162.0, 55.0], [176.5, 83.0], [160.0, 34.4], [152.0, 45.8]
+                    ],
+                    markPoint: {
+                        data: [
+                            {type: 'max', name: '最大值'},
+                            {type: 'min', name: '最小值'}
+                        ]
+                    }
+                },
+                {
+                    name: '男性',
+                    type: 'scatter',
+                    symbol: 'circle',
+                    data: [[174.0, 65.6], [175.3, 71.8], [193.5, 80.7], [186.5, 72.6], [187.2, 78.8],
+                        [181.5, 74.8], [184.0, 86.4], [184.5, 78.4], [175.0, 62.0], [184.0, 81.6],
+                        [180.0, 76.6], [177.8, 83.6], [192.0, 90.0], [176.0, 74.6], [174.0, 71.0],
+                        [184.0, 79.6], [192.7, 93.8], [171.5, 70.0], [173.0, 72.4], [176.0, 85.9],
+                        [176.0, 78.8], [180.5, 77.8], [172.7, 66.2], [176.0, 86.4], [173.5, 81.8],
+                        [178.0, 89.6], [180.3, 82.8], [180.3, 76.4], [164.5, 63.2], [173.0, 60.9],
+                        [183.5, 74.8], [175.5, 70.0], [188.0, 72.4], [189.2, 84.1], [172.8, 69.1],
+                        [170.0, 59.5], [182.0, 67.2], [170.0, 61.3], [177.8, 68.6], [184.2, 80.1],
+                        [186.7, 87.8], [171.4, 84.7], [172.7, 73.4], [175.3, 72.1], [180.3, 82.6]
+                    ],
+                    markPoint: {
+                        data: [
+                            {type: 'max', name: '最大值'},
+                            {type: 'min', name: '最小值'}
+                        ]
+                    }
+                }
+            ]
+        };
+        var option1 = {
+            legend: {
+                itemWidth: 15,
+                itemHeight: 10,
+                data: ['过期', '质量差', '投诉'],
+                textStyle: {
+                    color: 'green',
+                    fontSize: 10
+                }
+            },
+            xAxis: [
+                {
+                    name: '不合格分布',
+                    type: 'category',
+                    data: ['美国', '英国', '日本', '韩国', '印度', '俄罗斯'],
+                }
+            ],
+            yAxis: [
+                {
+                    name: '不合格数量',
+                    type: 'value',
+                }
+            ],
+            series: [
+                {
+                    name: '过期',
+                    type: 'scatter',
+                    symbol:'heart',
+                    symbolSize: 3,
+                    data: [51.6, 59.0, 49.2, 63.0, 53.6, 59.0],
+
+                },
+                {
+                    name: '质量差',
+                    type: 'scatter',
+                    symbol:'heart',
+                    symbolSize: 3,
+                    data: [40.6, 44.0, 30.2, 12.0, 22.6, 59.0],
+                    markPoint: {
+                        data: [
+                            {type: 'max', name: '最大值'},
+                            {type: 'min', name: '最小值'}
+                        ]
+                    }
+                },
+                {
+                    name: '投诉',
+                    type: 'scatter',
+                    symbol:'heart',
+                    symbolSize: 3,
+                    data: [65.6, 71.8, 80.7, 72.6, 78.8, 74.8],
+                    markPoint: {
+                        data: [
+                            {type: 'max', name: '最大值'},
+                            {type: 'min', name: '最小值'}
+                        ]
+                    }
+                }
+            ]
+        };
+        myChart.setOption(option1);
+    }
+</script>
 </body>
 </html>

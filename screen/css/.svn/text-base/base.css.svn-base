@@ -216,8 +216,8 @@ table{
     position: fixed;
     left:25%;
     top:5%;
-    border:solid 1px;
-    border-color: #eb6100;
+    /*border:solid 1px;*/
+    /*border-color: #eb6100;*/
 }
 #center_tb1{
     width:22%;
@@ -229,17 +229,20 @@ table{
     /*border-color: #eb6100;*/
 }
 #center_table1{
-    position: absolute;
+    position: fixed;
+    top:5%;
+    right:25%;
+    height:41%;
+    width:23%;
+    text-align: center;
     font-size: 15px;
     color: #FFFFFF;
-    border-collapse:separate;
-    border-spacing:0px 0px;
-    text-align: center;
     border:solid 3px;
     border-color: #025491;
+    border-collapse:separate;
+    border-spacing:0px 0px;
     /*opacity: 0.2;*/
     /*margin:5% auto 80%;*/
-    /*padding:20%;*/
 }
 .tr2_head{
     font-size: 18px;

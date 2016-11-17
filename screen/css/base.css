@@ -9,14 +9,34 @@
     background-image: url(../image/worldMap.png);
     background-repeat:no-repeat;
     /*background-attachment: fixed;*/
-    background-position: center;
+    background-position: center 30px;
     background-size: 100%;
+}
+#left2Bar{
+    position:relative;
+    top:0;
+    left:0;
+    width: 310px;
+    height:34px;
+    text-align: center;
+    border:solid 1px #fd971f;
+}
+#left2Pie{
+    position:relative;
+    bottom:0;
+    left:0;
+    width: 310px;
+    height: 203px;
 }
 h2{
     text-align: center;
     color: #ffffff;
     font-size: 16px;
     margin-top: 8px;
+}
+h2>a{
+    text-decoration: none;
+    color: #ffffff;
 }
 table{
     margin: auto 0px ;
